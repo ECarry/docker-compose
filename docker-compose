@@ -1,0 +1,17 @@
+# 3层
+
+version: '' #版本，对应 Docker Engine release，地址 https://docs.docker.com/compose/compose-file
+
+services: #服务
+  web:
+    #服务配置
+    images:
+    build:
+    network:
+    depends_on: #依赖，启动顺序
+    ...
+  redis:
+  mysql:
+
+# 其他配置 网络/卷、全局规则
+volume:
